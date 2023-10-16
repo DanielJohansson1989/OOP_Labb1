@@ -11,6 +11,8 @@
             Console.WriteLine(circle1.GetArea());
 
             Console.WriteLine(circle2.GetArea());
+
+            Console.WriteLine(circle1.GetCircumference());
         }
     }
 
@@ -27,6 +29,11 @@
         public float GetArea()
         {
             return _radius * _radius * _pi;
+        }
+
+        public float GetCircumference()
+        {
+            return 2 * _pi * _radius;
         }
     }
 }
