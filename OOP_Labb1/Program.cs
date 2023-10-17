@@ -8,32 +8,11 @@
 
             Circle circle2 = new Circle(6);
 
-            Console.WriteLine(circle1.GetArea());
+            Console.WriteLine($"The area of the first circle is {circle1.GetArea()}");
 
-            Console.WriteLine(circle2.GetArea());
+            Console.WriteLine($"The area of the second circle is {circle2.GetArea()}");
 
-            Console.WriteLine(circle1.GetCircumference());
-        }
-    }
-
-    public class Circle
-    {
-        private float _pi = 3.141f;
-        private int _radius;
-
-        public Circle(int radius)
-        {
-            _radius = radius;
-        }
-
-        public float GetArea()
-        {
-            return _radius * _radius * _pi;
-        }
-
-        public float GetCircumference()
-        {
-            return 2 * _pi * _radius;
+            Console.WriteLine($"The circumference of the first circle is {circle1.GetCircumference()}");
         }
     }
 }
